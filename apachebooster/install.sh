@@ -301,8 +301,8 @@ echo -e "$GREEN Creating varnish system user $RESET"
 clear
 echo -e "$GREEN starting nginx installation $RESET"
                cd $CUDIR/packages/
-               tar -xf  nginx-$nVERSION.tar.gz
-               tar -xf  pcre-$pcreVERSION.tar.gz
+               tar xfz  nginx-$nVERSION.tar.gz
+               tar xfz  pcre-$pcreVERSION.tar.gz
                cd nginx-$nVERSION/
                ./configure --prefix=/usr/local/nginx/ \
                            --with-ipv6 \
